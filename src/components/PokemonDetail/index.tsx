@@ -1,4 +1,4 @@
-import { IPokemon } from "../../interfaces/interfaces";
+import { IPokemon } from "../../assets/interfaces/interfaces";
 import { background } from "../../utils/BackgroundsByType";
 import { Loader } from "../Loader";
 import { BaseStats } from "./components/BaseStats";
