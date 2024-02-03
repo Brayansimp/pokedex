@@ -7,3 +7,4 @@ React
 TypeScript
 SCSS
 ¡Happy coding! 🚀
+inicio "npm run dev"
