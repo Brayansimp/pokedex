@@ -8,6 +8,7 @@ interface Props {
 export const Loader = ({ size, color }: Props) => {
   return (
     <span
+    
       style={{
         width: size,
         height: size,
