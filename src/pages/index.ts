@@ -1,2 +1,2 @@
 export {Home} from './Home';
-export { PokeDetail } from './PokeDetail';
+export { PokeDetail } from './pokeDetail';
