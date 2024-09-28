@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/ban-ts-comment */
 import { IPokemon } from "../../assets/interfaces/interfaces";
 import { background } from "../../utils/BackgroundsByType";
 import { Loader } from "../Loader";
@@ -14,7 +15,7 @@ interface Props {
 }
 
 export const PokemonDetail = ({ pokemon }: Props) => {
-  /* @ts-ignore */
+  /* @ts-expect-error */
   const backgroundSelected = background[pokemon?.types[0]?.type?.name];
 
   if (!pokemon) {

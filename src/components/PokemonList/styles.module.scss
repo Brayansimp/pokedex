@@ -1,21 +1,33 @@
 .pokemons {
-  margin: 0 auto;
-  max-width: 1200px;
+  margin: 0 auto;           /* Centra el contenido */
+  max-width: 100%;          /* Evita que exceda el 100% del ancho */
+  overflow-x: hidden;       /* Oculta cualquier contenido desbordado lateralmente */
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  justify-items: center;
+  grid-template-columns: repeat(4, 1fr); /* Para pantallas grandes */
   gap: 1rem;
-  padding: 1rem 2rem;
+  padding: 0 1rem;         /* Ajusta el padding para evitar desbordamiento lateral */
+
+  @media (max-width: 1200px) {
+    grid-template-columns: repeat(3, 1fr); /* Pantallas grandes */
+  }
 
   @media (max-width: 1000px) {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr); /* Pantallas medianas */
   }
 
-  @media (max-width: 800px) {
-    grid-template-columns: repeat(2, 1fr);
+  @media (max-width: 768px) {
+    grid-template-columns: repeat(2, 1fr); /* Tablets */
   }
 
-  @media (max-width: 400px) {
-    grid-template-columns: repeat(1, 1fr);
+  @media (max-width: 500px) {
+    grid-template-columns: repeat(1, 1fr); /* Teléfonos */
   }
+}
+
+html {
+  overflow: hidden; /* Evita el desplazamiento si hay un desbordamiento inesperado */
+}
+
+body {
+  overflow-x: hidden; /* Asegúrate de que el body también no tenga desplazamiento horizontal */
 }
